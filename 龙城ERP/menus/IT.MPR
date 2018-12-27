@@ -1,0 +1,77 @@
+*       *********************************************************
+*       *                                                         
+*       * 1999/11/20              IT.MPR                13:44:15  
+*       *                                                         
+*       *********************************************************
+*       *                                                         
+*       * 作者姓名                                                
+*       *                                                         
+*       * 版权(C) 1999 公司名                               
+*       * 地址                                                    
+*       * 城市,     邮政编码                                      
+*       * 国家/地区                                         
+*       *                                                         
+*       * 说明：                                            
+*       * 本程序由 GENMENU 自动生成。    
+*       *                                                         
+*       *********************************************************
+
+
+*       *********************************************************
+*       *                                                         
+*       *                         菜单定义                        
+*       *                                                         
+*       *********************************************************
+*
+
+SET SYSMENU TO
+SET SYSMENU AUTOMATIC
+
+DEFINE PAD _sa90tg0bb OF _MSYSMENU PROMPT "接单系统(F2)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F2, "F2"
+DEFINE PAD _sa90tg0bk OF _MSYSMENU PROMPT "生管系统(F3)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F3, "F3"
+DEFINE PAD _sa90tg0bl OF _MSYSMENU PROMPT "入库系统(F4)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F4, "F4"
+DEFINE PAD _sa90tg0bn OF _MSYSMENU PROMPT "送货系统(F5)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F5, "F5"
+DEFINE PAD _sa90tg0bo OF _MSYSMENU PROMPT "结帐系统(F6)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F6, "F6"
+DEFINE PAD _sa90tg0bq OF _MSYSMENU PROMPT "统计系统(F7)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F7, "F7"
+DEFINE PAD _sa90tg0bs OF _MSYSMENU PROMPT "退货系统(F8)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F8, "F8"
+DEFINE PAD _sa90tg0bu OF _MSYSMENU PROMPT "成本分析(F9)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F9, "F9"
+DEFINE PAD _sa90tg0bv OF _MSYSMENU PROMPT "转厂系统(F10)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F10, "F10"
+DEFINE PAD _sa90tg0bx OF _MSYSMENU PROMPT "基本资料(F11)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F11, "F11"
+DEFINE PAD _sa90tg0by OF _MSYSMENU PROMPT "资料备份(F12)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY F12, "F12"
+DEFINE PAD _sa90tg0c0 OF _MSYSMENU PROMPT "退出系统(^Q)" COLOR SCHEME 3 ;
+	NEGOTIATE RIGHT ;
+	KEY CTRL+Q, "CTRL+Q"
+ON SELECTION PAD _sa90tg0bb OF _MSYSMENU oApp.login2("formmnx1")
+ON SELECTION PAD _sa90tg0bk OF _MSYSMENU oApp.login2("formmnxa")
+ON SELECTION PAD _sa90tg0bl OF _MSYSMENU oApp.login2("formmnx2")
+ON SELECTION PAD _sa90tg0bn OF _MSYSMENU oApp.login2("formmnx3")
+ON SELECTION PAD _sa90tg0bo OF _MSYSMENU oApp.login2("formmnx4")
+ON SELECTION PAD _sa90tg0bq OF _MSYSMENU oApp.login2("formmnx5")
+ON SELECTION PAD _sa90tg0bs OF _MSYSMENU oApp.login2("formmnxb")
+ON SELECTION PAD _sa90tg0bu OF _MSYSMENU oApp.login2("formmnx6")
+ON SELECTION PAD _sa90tg0bv OF _MSYSMENU oApp.login2("formmnx8")
+ON SELECTION PAD _sa90tg0bx OF _MSYSMENU oApp.login2("formmnx7")
+ON SELECTION PAD _sa90tg0by OF _MSYSMENU oApp.login2("formmnxc")
+ON SELECTION PAD _sa90tg0c0 OF _MSYSMENU do form formmnx9.scx
